@@ -1,10 +1,10 @@
 import streamlit as st
-import joblib
+import joblib as jb
 import numpy as np
 from pathlib import Path
 
 model_path = Path(__file__).resolve().parent / "energy_model.joblib"
-model = joblib.load(model_path)
+model = jb.load(model_path)
 
 st.title("Household Energy Forecast")
 
